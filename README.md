@@ -11,6 +11,7 @@ Ex for MINGW64
 cd /TO-CURRENT_FOLDER/
 g++ [FILENAME] -o [EXECUTABLE DIRECTORY]
 
+
 ```
 
 Ex for MSVC
