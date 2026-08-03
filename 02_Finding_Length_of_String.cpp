@@ -3,12 +3,13 @@
 
 class Solution {
 public:
-  int fingLenght(std::string s) { return s.length(); }
-}
+  int findLength(std::string s) { return s.length(); }
+};
 
-int main(
-    Solution sol();
-    std::string Name >> std::cin;
-    sol.findLength(Name);
+int main(){
+    Solution sol;
+    std::string Name;
+    std::cin >> Name;
+    std::cout << sol.findLength(Name);
     return 0;
-)
+}
