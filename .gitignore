@@ -1,3 +1,7 @@
 *.exe
 /.vs/
 /.vscode/
+*.ilk
+*.obj
+*.pdb
+*.sqlite
