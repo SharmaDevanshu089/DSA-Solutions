@@ -2,11 +2,25 @@
 #include <unordered_map>
 #include <map>
 #include <string>
+#include <array>
 
 int main()
 {
-    int array_to_calculate[5] = {10, 15, 10, 13902, 0};
+    std::array<int, 5> array_to_calculate = {10, 15, 10, 13902, 0};
     int size_of_array = array_to_calculate.size();
     std::cout << size_of_array;
+
+    std::unordered_map<int, int> solution_array;
+
+    for (int i = 0; i < size_of_array; i++)
+    {
+        solution_array[i] += 1;
+        std::cout << std::endl
+                  << "Changes to "
+                  << array_to_calculate[i]
+                  << " As it has been count made to "
+                  << solution_array[i];
+    }
+
     return 0;
 }
