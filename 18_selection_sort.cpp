@@ -4,20 +4,21 @@ using namespace std;
 std::array<int, 5> sort_array(std::array<int, 5> array_to_sort)
 {
     int size_of_array = array_to_sort.size();
-    int minimum_array_value = 0;
+    int minimum_array_index = 0;
     for (int i = 0; i < size_of_array; i++)
     {
         // selected the first
-        for (int j = 0; j < size_of_array; j++)
+        // assuming current is always minimum
+        for (int j = i + 1; j < size_of_array; j++)
         {
-            if (array_to_sort[i] < array_to_sort[j])
+            // checking if j is less than i
+            if (array_to_sort[j] < array_to_sort[i])
             {
-                minimum_array_value = array_to_sort[i];
+                minimum_array_index = j;
             }
-            int temp = array_to_sort[j];
-            array_to_sort[j] = array_to_sort[i];
-            array_to_sort[i] = temp;
         }
+        // replacing i with j
+        std::swap(array_to_sort[i], array_to_sort[minimum_array_index]);
     }
     return array_to_sort;
 }
