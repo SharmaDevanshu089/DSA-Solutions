@@ -11,7 +11,7 @@ std::array<int, 5> sort_array(std::array<int, 5> array_to_sort)
             if (array_to_sort[j] > array_to_sort[j + 1])
             {
                 std::swap(array_to_sort[j], array_to_sort[j + 1]);
-                        }
+            }
         }
     }
 
