@@ -23,7 +23,6 @@ std::array<int,5> slide_to_end(std::array<int, 5> array_to_slide , int index_to_
     
 }
 int main(){
-
     std::array<int, 5> array_to_check = {1 ,0 ,2 ,3 ,0 };
     for(int i = 0; i < array_to_check.size(); i++)
     {
