@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 
+// Empty
 int main(){
     std::array<int,5> first_array= {1,2,3,4,5};
     std::vector<int>second_array = {2,3,4,5,6,4,3,7};
