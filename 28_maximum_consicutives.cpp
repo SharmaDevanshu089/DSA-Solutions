@@ -45,8 +45,6 @@ int main(){
         }
            
     }
-
     std::cout << "Maximum Streak : " << maximum_number_of_streak;
-    
     return 0;
 }
